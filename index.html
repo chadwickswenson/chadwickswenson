@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chadwick</title>
+    <link rel="stylesheet" href="superslides.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+
+<style>
+    .header-bg {
+        background:#fff;
+        opacity:1;
+        border-bottom:1px solid #ccc;
+        width:100%;
+        height:35px;
+        position:absolute;
+        display:block;
+        z-index:100;
+    }
+    .sub-header-bg {
+        background:#fff;
+        opacity:0.95;
+        border-bottom:#f2f2f2;
+        width:100%;
+        height:25px;
+        position:absolute;
+        display:block;
+        z-index:99;
+        top:34px;
+        border-bottom:1px solid #ccc;
+        position:fixed;
+    }
+    .sub-header-text {
+        width:95%;
+        z-index:101;
+        position:relative;
+        text-align:center;
+        margin:5px auto;
+        cursor:pointer;
+    }
+    .sub-header-link {
+        font-weight:400;
+        margin:0px 20px;
+    }
+    .current {
+        text-decoration:underline;
+        color:#2983E3;
+    }
+    .txt-img {
+        width:500px;
+    }
+    
+    .bh {
+        opacity:0.2;
+    }
+    .bh:hover {
+        opacity:0.5;
+    }
+    .header-bg h3 {
+        display:inline;
+        line-height:1.5em;
+    }
+    .main-links {
+        float:right;
+        margin:6px 20px;
+        font-size:1.1em;
+    }
+    #top-but {
+        float:right;
+        opacity:0;
+    }
+    .slide-text {
+        padding:10px;
+    }
+    p {
+        color:#f1f1f1;
+    }
+    #slide0-0 {
+        width:100%;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        height:300px;
+        margin-top:90px;
+    }
+    #slide0-1 {
+        width:300px;
+        float:left;
+        margin-top:15%;
+        padding:10px;
+        margin-left:5%;
+        background:#fff;
+        opacity:0.9;
+        border-radius:4px;
+    }
+    #slide0-1 p {
+    }
+    .slide-link {
+        color:#2983E3;
+        font-size:1em;
+        text-decoration:none;
+    }
+    .circle-guy {
+        border-radius:40px;
+        width:20px;
+        height:30px;
+        display:inline-block;
+        border:1px solid #2983E3;
+        font-size:30px;
+        color:#2983E3;
+        padding-left:10px;
+        margin-left:10px;
+    }
+    .arr {
+        font-size:20px;
+        top:5px;
+    }
+    #slide0-2 {
+        width:100%;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        margin-top:70px;
+    }
+    #slide0-2 p {
+        max-width:900px;
+        margin:10px auto;
+        padding:0px 20px;
+        color:#ccc;
+    }
+    #slide0-2 h2 {
+        color:#f2f2f2;
+    }
+    #slide1-0 {
+        width:100%;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        margin-top:40px;
+    }
+    #slide1-0 p {
+        max-width:900px;
+        margin:10px auto;
+        padding:0px 20px;
+    }
+    .bottom-link {
+        bottom:40px;
+        width:100%;
+        text-align:center;
+        display:inline-block;
+        position:absolute;
+    }
+   
+    #slide1-1 {
+        width:280px;
+        color:#fff;
+        top:50px;
+        right:30px;
+        position:absolute;
+    }
+    #slide1-1 h2 {
+        color:#fff;
+    }
+    #slide1-1 p {
+        color:#f2f2f2;
+    }
+    #slide1-2 {
+        width:100%;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        margin-top:20px;
+        text-shadow:0px 1px 2px #324a6b;
+    }
+    #slide1-2 p {
+        max-width:900px;
+        margin:10px auto;
+        padding:0px 20px;
+        color:#ccc;
+    }
+    #slide1-2 h2 {
+        color:#f2f2f2;
+    }
+    #slide2-0 {
+        width:100%;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        margin-top:40px;
+        text-shadow:0px 1px 2px #324a6b;
+    }
+    #slide2-0 p {
+        max-width:900px;
+        margin:10px auto;
+        padding:0px 20px;
+        color:#ccc;
+    }
+    #slide2-0 h2 {
+        color:#f2f2f2;
+    }
+    #slide3-0 {
+        width:400px;
+        text-align:center;
+        top:40px;
+        display:inline-block;
+        margin-top:90px;
+        text-align:left;
+        float:right;
+        padding:30px;
+        margin-right:170px;
+    }
+    #slide5-0 {
+        width:100%;
+        text-align:center;
+        top:0px;
+        display:inline-block;
+        margin-top:-20px;
+    }
+    #slide5-0 p {
+        max-width:900px;
+        margin:0px auto;
+        margin-top:-30px;
+        padding:0px 20px;
+    }
+    .main-links a {
+        color:#333;
+        text-decoration: none;
+    }
+    .cont {
+        margin:0px auto;
+    }
+    #slide0, #slide1, #slide2, #slide3, #slide4, #slide5 {
+    }
+    nav {
+        margin-bottom:30px;
+    }
+    strong {
+        font-weight:400;
+    }
+    .words {
+      color:#fff;
+      font-size:1.5em;
+      margin-top:20px;
+      margin-bottom:-15px;
+      font-weight:400;
+    }
+    .link-title{
+      display:inline-block;
+      color:#fff;
+      width:100%;
+      position:absolute;
+      bottom:10px;
+      left:0px;
+    }
+    h4{
+        font-size:15px;
+        font-weight:200;
+        line-height:2px;
+    }
+    .stream-img-item{
+        text-align:left;
+        list-style:none;
+        width:610px;
+        margin-bottom:300px;
+    }
+    .stronger{
+        font-weight:100;
+    }
+    .grey{
+        color:#BFBFBF;
+    }
+    #images{
+
+    }
+    .stream-img{
+        box-shadow:0px 1px 2px #B8B8B8;
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="left-nav">
+        <img src="stream-images/dude.png" width="240px" class="profile-pic" />
+        
+        <h1 class="my-name">Chadwick Swenson</h1>
+        <div class="subtitle">Bay Area Mobile Designer</div>
+
+        <ul class="menu-list">
+            <li><img class="ic" src="ic/resumeIcon.png" /> <a target="_blank" href="chad-resume.pdf">Resume</a></li>
+            <li><img class="ic" src="ic/portfolioIcon.png" /> <a href="#" class="current-page">Portfolio</a></li>
+            <li><img class="ic" src="ic/dribbbleIcon.png" /> <a target="_blank" href="https://dribbble.com/chadwickswenson">Dribbble</a></li>
+            <li><img class="ic" src="ic/linkedinIcon.png" /> <a target="_blank" href="https://www.linkedin.com/pub/chadwick-swenson/6b/63/3b2">LinkedIn</a></li>
+            <li><img class="ic" src="ic/codeIcon.png" /> <a target="_blank" href="https://github.com/chadwickswenson">GitHub</a></li>
+        </ul>
+        
+         <div class="subtitle bottom-contact">510.384.8049  /  <a href="">ChadSwenson@gmail.com</a></div>
+    </nav>
+
+    <div id="gallery-bg"></div>
+    <div id="img-wrap">
+        <div id="current-img">
+            <!--<div class="leftNav">
+                <img src="images/left.png" width="30px" />
+            </div>
+            <div class="rightNav">
+                <img src="images/right.png" width="30px" />
+            </div>-->
+        </div>
+
+    </div>
+
+    <div class="gallery-wrap">
+        <div class="project-gallery-wrapper">
+            <div class="project-current-image">
+            </div>
+            <div class="project-images">
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <ul id="images">
+
+        <!--<li class="img-thumb" num="1" type="jpg" style='background-image:url("im/thumbs/1.jpg")'></li>
+        <li class="img-thumb" num="2" type="jpg" style='background-image:url("im/thumbs/2.jpg")'></li>
+        <li class="img-thumb" num="3" type="jpg" style='background-image:url("im/thumbs/3.jpg")'></li>
+        <li class="img-thumb" num="4" type="png" style='background-image:url("im/thumbs/4.png")'></li>
+        <li class="img-thumb" num="5" type="png" style='background-image:url("im/thumbs/5.png")'></li>
+        <li class="img-thumb" num="6" type="png" style='background-image:url("im/thumbs/6.png")'></li>
+        <li class="img-thumb" num="7" type="png" style='background-image:url("im/thumbs/7.png")'></li>
+        <li class="img-thumb" num="8" type="jpg" style='background-image:url("im/thumbs/8.jpg")'></li>
+        <li class="img-thumb" num="9" type="jpg" style='background-image:url("im/thumbs/9.jpg")'></li>
+        <li class="img-thumb" num="10" type="jpg" style='background-image:url("im/thumbs/10.jpg")'></li>
+        <li class="img-thumb" num="11" type="png" style='background-image:url("im/thumbs/11.png")'></li>
+        <li class="img-thumb" num="12" type="png" style='background-image:url("im/thumbs/12.png")'></li>-->
+        <li class="stream-img-item">
+            <h4 class="stronger">First Time User Experience</h4>
+            <h4 class="grey">iOS Application.</h4>
+            <img class="stream-img" src="stream-images/img8.png" width="610px" height="500px"/>
+        </li>
+
+        <li class="stream-img-item">
+            <h4 class="stronger">Chat for iOS</h4>
+            <h4 class="grey">Part of Yahoo</h4>
+            <img class="stream-img" src="stream-images/img1.png" />
+        </li>
+        
+        <li class="stream-img-item">
+            <h4 class="stronger">Create Meeting Form</h4>
+            <h4 class="grey">For iPad app.</h4>
+            <img class="stream-img" src="stream-images/img3.png" width="610px" height="500px"/>
+        </li>
+
+        <li class="stream-img-item">
+            <h4 class="stronger">Wellnest Icon</h4>
+            <h4 class="grey">Branding for Adherial.</h4>
+            <img class="stream-img" src="stream-images/img5.png" width="610px" height="500px"/>
+        </li>
+        
+        <li class="stream-img-item">
+            <h4 class="stronger">Filter and Search Connections</h4>
+            <h4 class="grey">CRM iPad application.</h4>
+            <img class="stream-img" src="stream-images/img6.png" width="610px" height="500px"/>
+        </li>
+
+        <li class="stream-img-item">
+            <h4 class="stronger">Planning</h4>
+            <h4 class="grey">Low tech planning and wireframing can be quick and effective.</h4>
+            <img class="stream-img" src="stream-images/img7.png" width="610px" height="500px"/>
+        </li>
+
+        <li class="stream-img-item">
+            <h4 class="stronger">Login View</h4>
+            <h4 class="grey">Access codes will be used to allow user to access medical data.</h4>
+            <img class="stream-img" src="stream-images/img4.png" width="610px" height="500px"/>
+        </li>
+
+        <li class="stream-img-item">
+            <h4 class="stronger">Color for iPad App</h4>
+            <h4 class="grey">A good color palette is one of the most important parts of an app.</h4>
+            <img class="stream-img" src="stream-images/img2.png" />
+        </li>
+
+
+
+    </ul>
+
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/jquery.easing.1.3.js"></script>
+    <script src="javascripts/jquery.animate-enhanced.min.js"></script>
+
+   <script src="content.js"></script>
+
+    <script>
+
+
+    var curImageArr = [];
+    var curThumbArr = [];
+
+    var num = 0;
+    var process = 12;
+    var products = 20;
+    var proto = 36;
+    var imgSize = 178;
+    var projLoc = "projects/";
+    var currentFile = "";
+
+   
+    $("#img-wrap").css("height", "0");
+    $("#gallery-bg").css("opacity", "0");
+
+   
+
+
+  
+
+    start = function() {
+
+
+
+        $("#img-wrap").css("height", "0px");
+        $("#img-wrap").css("opacity", "0");
+        $("#gallery-bg").css("opacity", "0");
+    }
+
+
+
+    $(".img-thumb").click(function(e) {
+
+
+        var n = $(e.target).attr('num');
+        var t = $(e.target).attr('type');
+
+        var str = "url('im/reg/" + n + "."+t+"')";
+
+        $("#current-img").css("background-image", str);
+        $("#img-wrap").css("height", "100%");
+        $("#img-wrap").animate({
+            "opacity": "1"
+        }, 200);
+        $("#gallery-bg").animate({
+            "opacity": "0.7"
+        }, 200);
+    });
+
+    $("#img-wrap").click(function() {
+
+        $("#img-wrap").animate({
+            "opacity": "0"
+        }, 200, function() {
+            $("#img-wrap").css("height", "0");
+        });
+        $("#gallery-bg").animate({
+            "opacity": "0"
+        }, 200);
+
+    });
+
+    $(".leftNav").click(function(e) {
+        e.stopPropagation();
+
+        if (num <= 0) {
+            num = imgArr.length - 1;
+        } else {
+            num--;
+        }
+
+        var str = "url(img/" + objsArr[num].file + objsArr[num].ftype + ")";
+
+        $("#current-img").css("background-image", str);
+
+    });
+    $(".rightNav").click(function(e) {
+        e.stopPropagation();
+
+        if (num >= objsArr.length - 1) {
+            num = 0;
+        } else {
+            num++;
+        }
+
+        var str = "url(img/" + objsArr[num].file + objsArr[num].ftype + ")";
+
+        $("#current-img").css("background-image", str);
+
+
+    });
+    $("#current-img").click(function(e) {
+        $(".project-gallery-wrapper").animate({"margin-top":1550}, 400, function() {
+            $('.gallery-wrap').css("display", "none");
+        });
+        $("#gallery-bg").animate({
+            "opacity": "0"
+        }, 200);
+
+
+    });
+
+    $("#galleryLink").click(function(e) {
+        $('html,body').animate({
+            scrollTop: $(".project-wrapper").offset().top - 60
+        });
+    });
+
+    $("a").click(function(e) {
+        e.stopPropagation();
+    })
+
+
+    start();
+
+    $(".project-link-wrapper").click(function(e) {
+
+        var i = $($(e.target).parent()).attr("id");
+
+        addCurrentProject(i);
+
+        $('.gallery-wrap').css("display", "inline-block");
+        $('.project-gallery-wrapper').animate({"margin-top":50}, 400);
+        $('#gallery-bg').animate({
+            "opacity": "0.5"
+        }, 200);
+
+        var str = "url("+projLoc+curImageArr[0]+")";
+
+        $(".project-current-image").css("background-image", str);
+    });
+
+    $(".gallery-wrap").click(function(e) {
+
+        $(".project-gallery-wrapper").animate({"margin-top":1550}, 400, function() {
+            $('.gallery-wrap').css("display", "none");
+        });
+        $("#gallery-bg").animate({
+            "opacity": "0"
+        }, 200);
+
+    });
+
+     $('.project-link-wrapper').mouseover(function(e){
+            $($(e.target).parent()).find('.item1').animate({top:5, left:-3}, 1000);
+
+        });
+     $('.project-link-wrapper').mouseout(function(e){
+            $($(e.target).parent()).find('.item1').animate({top:0, left:0}, 1000);
+
+        });
+
+    
+
+    </script>
+</body>
+
+</html>
