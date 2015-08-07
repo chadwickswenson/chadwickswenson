@@ -1,6 +1,6 @@
 .left-nav{
 	visibility: hidden;
-}
+	}
 #images{
 	padding:10px;
 	margin-left:0px;
@@ -21,17 +21,18 @@
         width:100%;
         height:auto;
         margin-left:-10px;
+        box-shadow:none;
     }
     .special{
-       
-        padding:10px 15px;
-        border-radius:4px;
-        color:#fff;
-        font-weight:200;
-        font-size:20px;
-        width:260px !important;
-        margin-bottom:40px !important;
-        margin-top:40px !important;
-        position:relative;
+        visibility: hidden;
+        height:0px;
 
+    }
+    .mobile-guy{
+        visibility: visible;
+        height:auto;
+    }
+    h4{
+        margin-right:15px;
+        font-size:18px;
     }
