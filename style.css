@@ -749,6 +749,9 @@ h1{
         line-height:20px;
         
     }
+    .stream-img{
+    	background:#fff;
+    }
     .stream-img-item{
         text-align:left;
         list-style:none;
