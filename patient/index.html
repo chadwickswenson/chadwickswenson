@@ -1,0 +1,574 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>News</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="create-modal" class="modal-container	hide-toggle">
+		
+		<div class="modal create">
+			<div class="modal-title med">
+				Create New Custom Field
+			</div>
+			<div class="permission-modal">
+						<p>Set group permissions.</p>
+						<div class="group">
+							Lab Center
+							<select>
+								  <option value="none">Edit</option>
+								  <option value="single">View</option>
+								  <option value="multi">None</option>
+							</select>
+						</div>
+						<div class="group">
+							Lab Center
+							<select>
+								  <option value="none">Edit</option>
+								  <option value="single">View</option>
+								  <option value="multi">None</option>
+							</select>
+						</div>
+						<div class="group">
+							Lab Center
+							<select>
+								  <option value="none">Edit</option>
+								  <option value="single">View</option>
+								  <option value="multi">None</option>
+							</select>
+						</div>
+						<div class="group">
+							Lab Center
+							<select>
+								  <option value="none">Edit</option>
+								  <option value="single">View</option>
+								  <option value="multi">None</option>
+							</select>
+						</div>
+						<div class="group">
+							Lab Center
+							<select>
+								  <option value="none">Edit</option>
+								  <option value="single">View</option>
+								  <option value="multi">None</option>
+							</select>
+						</div>
+						<div class="basic-button done-permissions">
+							Done
+						</div>
+			</div>
+			<div class="form">
+				<div class="field-row">
+					<div class="field-label">
+						Type
+					</div>
+					<select>
+					  <option value="none">Select Field Type</option>
+					  <option value="single">Single Select</option>
+					  <option value="multi">Multi Select</option>
+					  <option value="date">Date</option>
+					  <option value="num">Number</option>
+					  <option value="phone">Phone</option>
+					  <option value="address">Address</option>
+					  <option value="text">Text Field</option>
+					  <option value="box">Text Box (larger)</option>
+					  <option value="user">User Picker</option>
+					</select>
+				</div>
+				<div class="field-row">
+					<div class="field-label">
+						Name
+					</div>
+					<input type="text" name="name" placeholder="Field Name">
+				</div>
+				<div class="field-row">
+					<div class="field-label">
+						Description
+					</div>
+					<textarea class="text-area" rows="4" cols="50" placeholder="Field Description"></textarea>
+				</div>
+				<div class="field-row">
+					<div class="field-label">
+						Permissions
+					</div>
+					<div class="security-button">
+						+ Add field level security
+					</div>
+
+				</div>
+			</div>
+			<div class="button-container">
+				<p>
+					This will add the field to all pages like this.
+				</p>
+				<div class="button cancel-button">
+					Cancel
+				</div>
+				<div class="button save-new-button">
+					Save & New
+				</div>
+				<div class="button save-button">
+					Save
+				</div>
+			</div>
+
+		</div>
+		
+
+
+	</div>
+	<div class="header">
+
+	</div>
+	<div class="profile-area">
+		<div class="pic">
+		<img src="" />
+		</div>
+		<div class="info">
+			<div id="name">
+				Name
+			</div>
+			<div id="birth">
+				5/7/1991
+			</div>
+			<div id="tags">
+				<div class="tag">
+				tag example
+				</div>
+				<div class="tag">
+				tag2
+				</div>
+			</div>
+			<div id="goal">
+				Health goal:
+			</div>
+			<div id="location">
+				Address of office and stuff
+			</div>
+			<div id="insurance">
+				Aetna PPO
+			</div>
+			<div id="family">
+			   6 Family Members
+			</div>
+		</div>
+		<div class="kpi-area">
+			<div class="kpi" id="insurance-type">
+				<div class="kpi-title" >
+					Payer Type
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+			</div>
+			<div class="kpi" id="risk">
+				<div class="kpi-title">
+					Health Risk
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+			</div>
+			<div class="kpi" id="charges">
+				<div class="kpi-title">
+					YTD Charges
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+				<div class="label">
+					of 2014
+				</div>
+			</div>
+			<div class="kpi" id="delight">
+				<div class="kpi-title">
+					Delight
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+				
+			</div>
+			<div class="kpi bigger-kpi" id="nba">
+				<div class="kpi-title">
+					Next Best Action
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+			</div>
+			<div class="kpi" id="last">
+				<div class="kpi-title">
+					Last Encounter
+				</div>
+				<div class="kpi-data">
+					val
+				</div>
+				<div class="label">
+					days ago
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tab-area">
+
+		<ul class="main-tabs">
+			<li>Profile</li>
+			<li class="actions">Actions</li>
+			<li>Preferences</li>
+			<li>Dialogue</li>
+			<li>Wiki</li>
+			<li class="active">Connections</li>
+		</ul>
+		<div id="Actions" class="actions-area tab-content not-visible">
+			<div class="table-row-headers">
+				<div class="action-cell small-cell">Type
+				</div>
+				<div class="action-cell med-cell">Regarding
+				</div>
+				<div class="action-cell large-cell">
+					Action Item
+				</div>
+				<div class="action-cell med-cell">
+					Source
+				</div>
+				<div class="action-cell med-cell">
+					Channels
+				</div>
+				<div class="action-cell med-cell">
+					Due
+				</div>
+				<div class="action-cell med-cell">
+					Progress
+				</div>
+				<div class="action-cell small-cell">
+					Status
+				</div>
+			</div>
+			<div class="rows">
+
+			</div>
+		</div>
+		<div id="Connections" class="connections-area tab-content visible">
+			<div class="section-header">
+				Family
+			</div>
+			<div class="connection">
+				<div class="pic">
+				<img src="" />
+				</div>
+				<div class="info">
+					<div class="name">
+						Name
+					</div>
+					<div class="dob">
+						10/21/16
+					</div>
+					<div class="general">
+						General info
+					</div>
+				</div>
+			</div>
+			<div class="connection">
+				<div class="pic">
+				<img src="" />
+				</div>
+				<div class="info">
+					<div class="name">
+						Name
+					</div>
+					<div class="dob">
+						10/21/16
+					</div>
+					<div class="general">
+						General info
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+</body>
+
+</html>
+
+<script>
+var currentUser = 0
+
+var people = [{"name":"Matthew Leonard","pic":"grandpa.png","dob":"1-Jan-45","location":"PCP: Dr Richard Biondi - Pomperaug Office Park in Southbury, CT","insurance":"Anthem MediBlue Plus (HMO)","family":"6 Family Members","insurance-type":"ACO","risk":3,"charges":"24%","delight":"good","nba":"action to take","last":43,"tags":"Diabetes,COPD,BMI", "connections":"Diabetes,COPD,BMI","connections":"1,wife,escalate.2,son,view.3,daughter-in-law,escalate.4,grandson,no permission.5,granddaughter,no permission","userID":0, "goal":2},
+
+{"name":"Theresa Leonard","pic":"grandma.png","dob":"1-Jan-48","location":"PCP: Dr Victoria Costales - Primary Care of Naugatuck in Naugatuck, CT","insurance":"Anthem MediBlue Plus (HMO)","family":"6 Family Members","insurance-type":"ACO","risk":2,"charges":"59%","delight":"good","nba":"action to take","last":1,"tags":"Pre-D,Arthritis","connections":"0,husband,escalate.2,son,view.3,daughter-in-law,escalate.4,grandson,no permission.5,granddaughter,no permission","userID":1, "goal":4},
+
+{"name":"George Leonard","pic":"dad.png","dob":"1-Jan-70","location":"PCP: Dr Elliot Mathias - Family Health Care in Shelton, CT","insurance":"HCT Preferred PPO (PPO)","family":"6 Family Members","insurance-type":"FFS","risk":3,"charges":"96%","delight":"med","nba":"action to take","last":1,"tags":"Diabetes,BMI","connections":"0,father,no permission.1,mother,no permission.3,wife,escalate.4,son,no permission.5,daughter,no permission","userID":2, "goal":3},
+
+{"name":"Amy Leonard","pic":"mom.png","dob":"1-Jan-72","location":"PCP: Dr Elliot Mathias - Family Health Care in Shelton, CT","insurance":"HCT Preferred PPO (PPO)","family":"6 Family Members","insurance-type":"FFS","risk":1,"charges":"0%","delight":"med","nba":"action to take","last":224,"tags":"","connections":"0,father-in-law,no permission.1,mother-in-law,no permission.2,husband,escalate.4,son,no permission.5,daughter,no permission","userID":3, "goal":1},
+
+{"name":"Jack Leonard","pic":"child1.png","dob":"1-Jan-10","location":"PCP: Dr Elliot Mathias - Family Health Care in Shelton, CT","insurance":"HCT Preferred PPO (PPO)","family":"6 Family Members","insurance-type":"FFS","risk":1,"charges":"6%","delight":"med","nba":"action to take","last":56,"tags":"Asthma","connections":"0,grandfather,no permission.1,grandmother,view.2,father,escalate.3,mother,escalate.5,sister,no permission","userID":4, "goal":3},
+
+{"name":"Anna Leonard","pic":"child2.png","dob":"1-Jan-13","location":"PCP: Dr Elliot Mathias - Family Health Care in Shelton, CT","insurance":"HCT Preferred PPO (PPO)","family":"6 Family Members","insurance-type":"FFS","risk":1,"charges":"17%","delight":"med","nba":"action to take","last":365,"tags":"Overweight", "connections":"0,grandfather,no permission.1,grandmother,view.2,father,escalate.3,mother,escalate.4,brother,no permission","userID":5, "goal":3}]
+
+var connections = [{"pic":"mom.png","name":"Bob Sagget","dob":"2/1/89","info":"Friend","perms":"No permissions","userID":0},{"pic":"grandpa.png","name":"Bob Sagget","dob":"2/1/89","info":"Father","perms":"read","userID":1}]
+
+var actions0 = [{"type":"c","regarding":"","action":"Overdue for Remicade infusion. ED risk. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"3/15 Case Mgr discussion","status":-1},
+{"type":"t","regarding":"Theresa - wife","action":"Recommend completion of advanced directive.","source":"Case Mgmt","channels":"PCP, Nurse, Face-to-face","due":"4/30/2016","progress":"3/15 Case Mgr discussion","status":-1},
+	{"type":"c","regarding":"","action":"Complete annual fall screen. Last 04/15/2015. Schedule PCP visit.","source":"ACO claims","channels":"PCP","due":"4/15/2016","progress":"none","status":0}
+	]
+
+var actions = [{"type":"c","regarding":"","action":"Overdue for Remicade infusion. ED risk. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"3/15 Case Mgr discussion","status":0},
+
+	{"type":"c","regarding":"","action":"Complete annual fall screen. Last 04/15/2015. Schedule PCP visit.","source":"ACO claims","channels":"PCP","due":"4/15/2016","progress":"none","status":0},
+
+	{"type":"t","regarding":"Theresa - wife","action":"Recommend completion of advanced directive.","source":"Case Mgmt","channels":"PCP, Nurse, Face-to-face","due":"4/30/2016","progress":"3/15 Case Mgr discussion","status":-1}
+	]
+
+var actions1 = [{"type":"c","regarding":"Matthew - Husband","action":"Overdue for Remicade infusion. ED risk. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"3/15 Case Mgr discussion","status":0},
+
+	{"type":"t","regarding":"","action":"Heart Wellness Clinic. Sign member of for HWC. Offer to pay for transportation.","source":"EMR","channels":"All","due":"Past","progress":"3/1 email. <br/> 3/9 email. <br/> 3/15 call.","status":0},
+
+	{"type":"t","regarding":"","action":"Recommend completion of advanced directive.","source":"Case Mgmt","channels":"PCP, Nurse, Face-to-face","due":"4/30/2016","progress":"3/15 Case Mgr discussion","status":-1},
+
+	{"type":"c","regarding":"","action":"Complete annual fall screen. Last 02/11/2015. Schedule PCP visit.","source":"ACO claims","channels":"PCP","due":"Past","progress":"none","status":0},
+
+	{"type":"c","regarding":"","action":"Mammography overdue. Last on 2/11/14. Schdule immediately.","source":"EMR","channels":"All","due":"Past","progress":"none","status":0}]
+
+	//george dad
+	var actions2 = [{"type":"t","regarding":"Theresa - Mother","action":"Recommend completion of advanced directive.","source":"Case Mgmt","channels":"PCP, Nurse, Face-to-face","due":"4/30/2016","progress":"3/15 Case Mgr discussion","status":-1},
+
+	{"type":"c","regarding":"","action":"Upcoming A1C lab test required. Last on 09/30/15. Schedule on next contact.","source":"EMR","channels":"All","due":"3/30/2016","progress":"none","status":0},
+
+	{"type":"c","regarding":"","action":"Upcoming Retina exam required. Last on 4/02/2016. Schedule PCP visit.","source":"Claims data","channels":"All","due":"4/2/2016","progress":"none","status":0},
+
+	{"type":"c","regarding":"","action":"Upcoming Foot exam required. Last on 4/02/2016. Schedule PCP visit.","source":"Claims data","channels":"All","due":"4/2/2016","progress":"none","status":0},
+
+	{"type":"c","regarding":"","action":"Smoker. Lung screening candidate. Check for 30 pack-year history.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"none","status":0},
+
+	{"type":"t","regarding":"Anna - Daughter","action":"Juvenille Nutrition Program. Assess member fit for nutirition program to address weight.","source":"Marketing","channels":"PCP, Nurse","due":"5/31/2016","progress":"3/15 Email","status":-1},
+
+	{"type":"t","regarding":"Anna - Daughter","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1},
+
+	{"type":"c","regarding":"Jack - Son","action":"Child wellness visit past due. Last 1/26/2016. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"1/15 Email","status":-1},
+
+	{"type":"t","regarding":"Jack - Son","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1}
+
+	
+
+	]
+
+	var actions3 = [
+	{"type":"c","regarding":"Matthew - father-in-law","action":"Overdue for Remicade infusion. ED risk. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"3/15 Case Mgr discussion","status":0},
+
+	{"type":"t","regarding":"Theresa - mother-in-law","action":"Recommend completion of advanced directive.","source":"Case Mgmt","channels":"PCP, Nurse, Face-to-face","due":"4/30/2016","progress":"3/15 Case Mgr discussion","status":-1},
+
+	{"type":"c","regarding":"","action":"Mammography overdue. Last on 12/21/12. Schdule immediately.","source":"EMR","channels":"All","due":"Past","progress":"none","status":0},
+
+	{"type":"t","regarding":"","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"none","status":-1},
+
+	{"type":"t","regarding":"Anna - Daughter","action":"Juvenille Nutrition Program. Assess member fit for nutirition program to address weight.","source":"Marketing","channels":"PCP, Nurse","due":"5/31/2016","progress":"3/15 Email","status":-1},
+
+	{"type":"t","regarding":"Anna - Daughter","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1},
+
+	{"type":"c","regarding":"Jack - Son","action":"Child wellness visit past due. Last 1/26/2016. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"1/15 Email","status":-1},
+
+	{"type":"t","regarding":"Jack - Son","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1}
+
+	]
+
+	var actions4 = [{"type":"c","regarding":"","action":"Child wellness visit past due. Last 1/26/2016. Schedule immediately.","source":"EMR","channels":"All","due":"Past","progress":"1/15 Email","status":-1},
+
+	{"type":"t","regarding":"","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1}]
+
+	var actions5 = [{"type":"t","regarding":"","action":"Juvenille Nutrition Program. Assess member fit for nutirition program to address weight.","source":"Marketing","channels":"PCP, Nurse","due":"5/31/2016","progress":"3/15 Email","status":-1},
+
+	{"type":"t","regarding":"","action":"Get member signed up for patient portal.","source":"Marketing","channels":"All","due":"5/31/2016","progress":"3/15 Email","status":-1}]
+
+	var editDropdown = "<select><option>Edit</option><option>View</option><option>Escalate</option><option>No permission</option></select>"
+	var viewDropdown = "<select><option>View</option><option>Edit</option><option>Escalate</option><option>No permission</option></select>"
+	var escalateDropdown = "<select><option>Escalate</option><option>Edit</option><option>View</option><option>No permission</option></select>"
+	var noDropdown = "<select><option>No permission</option><option>Edit</option><option>View</option><option>Escalate</option></select>"
+
+	var goals =""
+	var smokeGoal = "<select><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Improve diet</option><option>Stop/reduce alcohol intake</option><option>Reduce stress</option><option>Decrease fall risk</option><option>None</option></select>"
+	
+	var activityGoal = "<select><option>Increase activity</option><option>Stop/reduce tobacco</option><option>Improve diet</option><option>Stop/reduce alcohol intake</option><option>Reduce stress</option><option>Decrease fall risk</option><option>None</option></select>"
+	var drinkGoal = "<select><option>Stop/reduce alcohol intake</option><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Improve diet</option><option>Reduce stress</option><option>Decrease fall risk</option><option>None</option></select>"
+	var dietGoal = "<select><option>Improve diet</option><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Stop/reduce alcohol intake</option><option>Reduce stress</option><option>Decrease fall risk</option><option>None</option></select>"
+	var fallGoal = "<select><option>Decrease fall risk</option><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Improve diet</option><option>Stop/reduce alcohol intake</option><option>Reduce stress</option><option>None</option></select>"
+	var stressGoal = "<select><option>Reduce stress</option><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Improve diet</option><option>Stop/reduce alcohol intake</option><option>Decrease fall risk</option><option>None</option></select>"
+	var noGoal = "<select><option>None</option><option>Stop/reduce tobacco</option><option>Increase activity</option><option>Improve diet</option><option>Stop/reduce alcohol intake</option><option>Reduce stress</option><option>Decrease fall risk</option></select>"
+
+window.onload = function() {
+	setData()
+	addData()
+	addActions()
+}
+function setData(){
+
+	if(currentUser == 1){
+		actions = actions1
+	}
+	else if(currentUser == 2){
+		actions = actions2
+	}
+	else if(currentUser == 3){
+		actions = actions3
+	}
+	else if(currentUser == 4){
+		actions = actions4
+	}
+	else if(currentUser == 5){
+		actions = actions5
+	}
+	else{
+		actions = actions0
+	}
+
+	goals = noGoal
+
+	if(people[currentUser]["goal"] == 0){
+		goals = smokeGoal
+	}
+	else if(people[currentUser]["goal"] == 1){
+		goals = activityGoal
+	}
+	else if(people[currentUser]["goal"] == 2){
+		goals = drinkGoal
+	}
+	else if(people[currentUser]["goal"] == 3){
+		goals = dietGoal
+	}
+	else if(people[currentUser]["goal"] == 4){
+		goals = fallGoal
+	}
+	else if(people[currentUser]["goal"] == 5){
+		goals = stressGoal
+	}
+}
+function addData(){
+	//add connections
+	var str = ""
+	//setData()
+	var cons = people[currentUser]["connections"].split('.')
+	
+	for(var i = 0; i < cons.length;i++){
+		var con = cons[i].split(',')
+		var index = con[0]
+		var dd = editDropdown
+		if(con[2].indexOf("no") >= 0){
+			dd = noDropdown
+		}
+		else if(con[2].indexOf("view") >= 0){
+			dd = viewDropdown
+		}
+		else if(con[2].indexOf("escalate") >= 0){
+			dd = escalateDropdown
+		}
+		var conHtml = "<div class='connection'> <div class='pic'>"
+		conHtml += "<img src='assets/" + people[index]["pic"] + "'/></div>"		
+		conHtml += "<div class='info'><div class='name' id='"+ people[index]["userID"] +"'>"	
+		conHtml += 	people[index]["name"]	
+		conHtml += 	"</div><div class='dob'>"		
+		conHtml += 	people[index]["dob"]			
+		conHtml += 	"</div><div class='general'>"				
+		conHtml += 	con[1]		
+		conHtml += 	"</div><div class='perms'>"
+		conHtml +=  dd			
+		conHtml += 	"</div></div></div>"	
+
+		str += conHtml
+	}
+
+	var tags = people[currentUser]["tags"].split(',')
+	var tagsHtml = ""
+	if(tags[0].length > 2){
+		for(var i = 0; i < tags.length;i++){
+		tagsHtml += "<div class='tag'>"
+		tagsHtml += tags[i] + "</div>"
+		}
+	}
+
+	
+
+	var riskImg = "<img width='66px' src='assets/"+people[currentUser]["risk"]+".png' />"
+	var delImg = "<img width='50px' src='assets/"+people[currentUser]["delight"]+".png' />"
+	$("#tags").html(tagsHtml)
+
+	$("#Connections").html(str)
+	$("#name").html(people[currentUser]["name"])
+	$(".profile-area .pic").html("<img src='assets/" + people[currentUser]["pic"] + "'/>")
+	$("#location").html(people[currentUser]["location"])
+	$("#birth").html(people[currentUser]["dob"])
+	$("#insurance").html("Insurance: "+people[currentUser]["insurance"])
+	$("#family").html(people[currentUser]["family"])
+	$("#insurance-type .kpi-data").html(people[currentUser]["insurance-type"])
+	$("#risk .kpi-data").html(riskImg)
+	$("#charges .kpi-data").html(people[currentUser]["charges"])
+	$("#delight .kpi-data").html(delImg)
+	$("#last .kpi-data").html(people[currentUser]["last"])
+	$("#nba .kpi-data").html(actions[0]["regarding"]+ " " +actions[0]["action"])
+	$("#goal").html("Health Goal: "+goals)
+
+	var actionsStr = ""
+	for(var i = 0; i < actions.length;i++){
+		var statusNum = actions[i]['status']
+		var stat = "open"
+		if(statusNum == -1){
+			stat = "escalate"
+		}
+		else if(statusNum == 1){
+			stat = "closed"
+		}
+
+		var actionHtml =  "<div class='action-item'><div class='action-cell small-cell'>"
+		actionHtml += "<img width='24px'  src='assets/" + actions[i]['type'] + ".png' /></div>"
+		actionHtml += "<div class='action-cell med-cell'>"
+		actionHtml += actions[i]['regarding'] + "</div>"
+		actionHtml += "<div class='action-cell large-cell'>"
+		actionHtml += actions[i]['action'] + "</div>"
+		actionHtml += "<div class='action-cell med-cell'>"
+		actionHtml += actions[i]['source'] + "</div>"
+		actionHtml += "<div class='action-cell med-cell'>"
+		actionHtml += actions[i]['channels'] + "</div>"		
+		actionHtml += "<div class='action-cell med-cell'>"
+		actionHtml += actions[i]['due'] + "</div>"
+		actionHtml += "<div class='action-cell med-cell'>"
+		actionHtml += actions[i]['progress'] + "</div>"	
+		actionHtml += "<div class='action-cell small-cell'>"
+		actionHtml += stat + "</div></div>"	
+		console.log("actionHtml")
+		actionsStr += actionHtml
+	}
+
+	$(".rows").html(actionsStr)
+}
+
+function addActions(){
+	
+	$(".main-tabs li").click(function(e){
+		$(".main-tabs li").removeClass("active");
+		$(event.target).addClass("active");
+		$(".tab-content").removeClass('visible')
+		$(".tab-content").removeClass('not-visible')
+		$(".tab-content").addClass('not-visible')
+		$("#"+$(event.target).text()).addClass('visible')
+	})
+	$(".connection .name").click(function(e){
+
+		currentUser = $(event.target).attr("id")
+		setData()
+		console.log(currentUser)
+		addData()
+		addActions()
+	})
+
+
+}
+
+</script>
