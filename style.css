@@ -299,23 +299,77 @@ body {
 }
 
 .portfolio-content .ti-external-link {
-    font-size: 0.8em;
     opacity: 0.7;
     margin-left: 0.25rem;
 }
 
 .portfolio-description {
     color: var(--text-light);
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     margin-top: 0.25rem;
-    line-height: 1.4;
 }
 
 .rating {
     display: block;
+    color: var(--text-light);
     font-weight: 500;
-    margin-top: 0.45rem;
+    margin-top: 0.15rem;
+    margin-bottom: 0.5rem;
     white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+.portfolio-item-hidden {
+    display: none;
+}
+
+.portfolio-item-featured {
+    border-color: var(--primary) !important;
+    position: relative;
+}
+
+.featured-tag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0 0 0 0.375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    z-index: 10;
+}
+
+.view-more-btn {
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto 0;
+    opacity: 0.5;
+    transition: background-color 0.2s ease;
+}
+
+.view-more-btn:hover {
+    background: var(--primary-light);
+}
+
+.view-more-btn i {
+    transition: transform 0.2s ease;
+}
+
+.view-more-btn.expanded i {
+    transform: rotate(180deg);
 }
 
 /* Responsive */
@@ -323,7 +377,9 @@ body {
     body {
         padding: 1rem;
     }
-
+    .resume{
+        padding: 1.2rem;
+    }
     .header {
         padding: 2rem 1.5rem;
     }
