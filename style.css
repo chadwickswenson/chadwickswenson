@@ -122,7 +122,7 @@ body {
 
 /* Experience */
 .job {
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
     padding-bottom: 1.5rem;
 }
 
@@ -216,7 +216,7 @@ body {
 /* Skills */
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -403,7 +403,7 @@ body {
     }
 
     .skills {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portfolio-grid {
@@ -438,6 +438,10 @@ body {
 
     .portfolio-category {
         font-size: 1rem;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
     }
 }
 
