@@ -14,7 +14,7 @@
     --warning: #fd7e14;
     --danger: #d63384;
     --text: #1d1c1a;
-    --text-light: #4f4d45;
+    --text-light: #32312a;
     --bg: #efeae4;
     --white: #ffffff;
     --border: #e4e4d4;
@@ -29,6 +29,7 @@ body {
     color: var(--text);
     background: var(--bg);
     padding: 2rem;
+    color: var(--text-light);
 }
 
 /* Container */
@@ -51,12 +52,14 @@ body {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: var(--text-light);
 }
 
 .title {
     font-size: 1.125rem;
     opacity: 0.9;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
 }
 
 .contact {
@@ -68,6 +71,7 @@ body {
 
 .contact-item {
     display: flex;
+    color: var(--text-light);
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
@@ -187,6 +191,7 @@ body {
     margin: 0.5rem 0;
     padding-left: 1rem;
     position: relative;
+    font-size: 0.9rem;
 }
 
 .achievement::before {
