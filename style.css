@@ -221,7 +221,7 @@ body {
 /* Skills */
 .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
@@ -236,7 +236,7 @@ body {
     gap: 0.5rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
 .skill-icon {
