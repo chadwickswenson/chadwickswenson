@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadwick Swenson - Portfolio</title>
+    
+    <!-- Cache control meta tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="portfolio-style.css?v=2">
+    <!-- Tabler Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+        <a href="index.html" class="nav-tab">
+            <i class="ti ti-user-filled"></i>
+            Resume
+        </a>
+        <a href="portfolio.html" class="nav-tab active">
+            <i class="ti ti-briefcase-filled"></i>
+            Portfolio
+        </a>
+    </div>
+
+    <div class="resume">
+        <header class="header">
+            <h1 class="name">Portfolio</h1>
+            <div class="title">Selected work from 2014 to present</div>
+        </header>
+
+        <main class="content">
+            <section class="section">
+                <div class="portfolio-items">
+                    <!-- Portfolio items will be generated dynamically from JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="ti ti-x"></i>
+            </button>
+            
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-section">
+                    <div class="modal-label">Project Summary</div>
+                    <div id="modalDescription" class="modal-description">
+                        <div id="modalShortSummary" class="modal-summary-short"></div>
+                        <div id="modalLongSummary" class="modal-summary-long" style="display: none;"></div>
+                        <button id="modalReadMoreBtn" class="modal-read-more-btn" data-expanded="false">
+                            <span class="read-more-text">read more</span>
+                            <i class="ti ti-arrow-narrow-down-dashed read-more-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="modal-section">
+                    <div class="modal-label">Results</div>
+                    <div id="modalResults" class="modal-results"></div>
+                </div>
+                
+                <div class="modal-section" id="modalLinksSection" style="display: none;">
+                    <div class="modal-label">Links</div>
+                    <div id="modalLinks" class="modal-links"></div>
+                </div>
+                
+                <div class="image-carousel">
+                    <button class="carousel-btn carousel-prev" id="carouselPrev">
+                        <i class="ti ti-circle-arrow-left"></i>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-images" id="carouselImages">
+                            <!-- Images will be inserted here dynamically -->
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn carousel-next" id="carouselNext">
+                        <i class="ti ti-circle-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-thumbnails" id="carouselThumbnails">
+                    <!-- Thumbnails will be inserted here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="portfolio-script.js?v=2"></script>
+</body>
+</html>
