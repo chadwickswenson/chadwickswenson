@@ -4,9 +4,9 @@ $(document).ready(function() {
         {
           id: 'tappity-app',
           title: 'Tappity – Designing the #1 Science App for Kids from Scratch',
-          shortSummary: 'I designed Tappity from the ground up, including brand identity, design system, and all key flows. It grew from a side project to $5M+ in subscription revenue and over 1M users.',
-          longSummary: 'Beyond visual identity, I led the end-to-end UX across mobile and web, focusing on onboarding optimization, personalization, and parent engagement. I also built tools for subscription flows, content management, and analytics that fueled revenue growth and scale.',
-          results: 'Generated $5M+ in subscription revenue and 1M+ users',
+          shortSummary: 'Designed Tappity from the ground up; brand identity, design system, user flows, marketing, and book design. It grew into the #1 kids’ science app, offering thousands of interactive lessons and curriculum-paired books.',
+          longSummary: 'I invested thousands of hours designing everything from product UX to eight published science books. The result is a cohesive experience for families: casual science exploration for kids, dashboards and controls for parents, curriculum depth for homeschoolers, and AI implemented throughout.',
+          results: '$5M+ in revenue, 1M+ users, 40M+ lessons completed, and an incredible team making it all possible.',
           links: [
             { url: 'https://tappityapp.com', text: 'Tappity Web App' },
             { url: 'https://apps.apple.com/us/app/science-for-kids-by-tappity/id1265019371', text: 'iOS App Store App Page' }
@@ -27,9 +27,9 @@ $(document).ready(function() {
         {
           id: 'tappity-onboarding',
           title: 'Tappity – Onboarding that Converts',
-          shortSummary: 'Designed and optimized onboarding across iOS, mobile web, and desktop, balancing personalization with minimizing drop-off. Source-specific flows tailored for marketing, referrals, and organic search doubled mobile paid conversion.',
-          longSummary: 'Onboarding at Tappity evolved through years of iteration. We used funnel testing with hundreds of users per day to refine every step. A highlight was creating “early wow” moments, such as recording 500+ popular kids’ names so characters could greet users personally, and later scaling personalization with AI. We also experimented with deferred onboarding for giveaway campaigns to let users experience value before setup.',
-          results: 'Improved mobile download-to-paid conversion from 2.5% to 5%+',
+          shortSummary: 'Over 5 years, I iterated on onboarding across iOS, mobile web, and desktop. The focus was on getting users to early “wow” moments and tailoring flows by source (paid marketing, referrals, organic search) and family type (homeschool vs. non-homeschool) to maximize conversion to subscription.',
+          longSummary: 'We funneled hundreds of users a day through tests to refine every step. Highlights included “early wow” personalization (characters greeting kids by name from a library of 500+ names, later scaled with AI) and source-specific flows. For example, motivated organic search users could complete more setup, while paid users needed a lighter path with immediate value. Homeschool families, on the other hand, tended to prefer more setup and more context before getting started. They valued understanding the product upfront and often made larger purchases sooner, so we customized their flow to match that behavior.',
+          results: 'Raised onboarding completion from 60% → 95%. Increased mobile download-to-paid conversion from 2.5% → 5%+, which is above the typical 1–4% range for consumer education apps, despite our product being priced at a premium ($10+/month).',
           links: [
             { url: 'https://tappityapp.com', text: 'Tappity Web App' }
           ],
@@ -70,10 +70,10 @@ $(document).ready(function() {
         },*/
         {
           id: 'billcom-redesign',
-          title: 'Bill.com – Complete Redesign for SMB + Custom Design Sprint Process',
-          shortSummary: 'Led a major redesign of Bill.com for SMB customers, simplifying complex onboarding and workflows. Created a custom design sprint process to integrate input from engineering, compliance, partnerships, and marketing from day one.',
-          longSummary: 'Designed hundreds of components and dozens of workflows, tested weekly with real users. The redesign focused on making compliance-heavy processes accessible while improving usability for small business admins and enterprise teams, supporting Bill.com’s growth to IPO.',
-          results: 'Supported $100M+ ARR growth and IPO readiness',
+          title: 'Bill.com – Complete Redesign & Custom Design Sprint Process',
+          shortSummary: 'Led the full redesign of Bill.com, simplifying onboarding, bill pay, and admin workflows. Built a custom design sprint process to integrate engineering, compliance, accessibility, partnerships, and marketing from the start.',
+          longSummary: 'Partnered with PM, two engineering teams (15+ engineers), and ~5 designers. Designed hundreds of components and workflows, testing weekly with users. Championed the redesign vision across 500+ employees and created a repeatable sprint methodology (50+ sprints) that balanced speed with gathering requirements from dozens of stakeholders.',
+          results: 'Launched redesigned Bill.com within 6 months. Completed 30+ ADA-compliant flows. Improved SMB adoption and set the foundation for SMB growth to IPO.',
           links: [
             { url: 'https://bill.com', text: 'Bill.com' }
           ],
@@ -91,17 +91,17 @@ $(document).ready(function() {
         {
           id: 'yahoo-fantasy',
           title: 'Yahoo Fantasy Sports – Designing "Two Apps in One"',
-          shortSummary: 'Designed mobile interactions to integrate two data-heavy fantasy sports products into one seamless app.',
-          longSummary: 'Explored and tested playful UI patterns for switching between modes, including coin-flip interactions. The result was a responsive, engaging experience that allowed users to quickly toggle between contexts on iOS and Android.',
-          results: 'Improved usability and engagement for millions of mobile sports users',
+          shortSummary: 'Designed the integration of Daily Fantasy into Yahoo Fantasy Sports, helping 5M+ monthly active users discover and adopt a brand-new feature.',
+          longSummary: 'Collaborated with PM, design leadership, and a 15-person iOS/Android engineering team. After testing different approaches, we landed on a playful “coin flip” interaction that let users toggle seamlessly between traditional fantasy and daily fantasy, with room for notifications and promotions. ',
+          results: '80% of users discovered the new feature, with 60% engaging via the new navigation.',
           links: [
-            { url: 'https://sports.yahoo.com/fantasy/', text: 'Yahoo Fantasy Sports' }
+            { url: 'https://apps.apple.com/us/app/yahoo-fantasy-football-sports/id328415391', text: 'Yahoo Fantasy Sports' }
           ],
           media: [
             'stream-images/portfolio images/yahoo-sports/80.png',
-            'stream-images/portfolio images/yahoo-sports/chat.png',
             'stream-images/portfolio images/yahoo-sports/data.png',
             'stream-images/portfolio images/yahoo-sports/lobby.png',
+            'stream-images/portfolio images/yahoo-sports/chat.png',
           ],
           captions: [
             'Dual-mode interface design for fantasy sports switching',
