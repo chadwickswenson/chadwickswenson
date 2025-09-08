@@ -77,6 +77,14 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.portfolio-label i {
+    color: var(--primary);
+    font-size: 0.9rem;
 }
 
 .portfolio-description {
@@ -339,6 +347,14 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-label i {
+    color: var(--primary);
+    font-size: 1rem;
 }
 
 /* Image Carousel */
@@ -469,6 +485,22 @@
     width: 20px;
     height: 20px;
     font-size: 10px;
+}
+
+/* Image Caption */
+.image-caption {
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-style: italic;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
 }
 
 .thumbnail.video-thumbnail::after {

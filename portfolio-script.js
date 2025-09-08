@@ -9,14 +9,19 @@ $(document).ready(function() {
           results: 'Generated $5M+ in subscription revenue and 1M+ users',
           links: [
             { url: 'https://tappityapp.com', text: 'Tappity Web App' },
-            { url: 'https://apps.apple.com/us/app/science-for-kids-by-tappity/id1265019371', text: 'iOS App Store' }
+            { url: 'https://apps.apple.com/us/app/science-for-kids-by-tappity/id1265019371', text: 'iOS App Store App Page' }
           ],
           media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
+            'stream-images/portfolio images/tappity-app/card1.png',
             'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
+            'https://youtu.be/98Bp0ze88_k',
+            'https://youtu.be/vVNBnOaWNxg'
+          ],
+          captions: [
+            'Main lobby interface showing personalized learning paths',
+            'Demo video showing the complete user experience',
+            'Behind-the-scenes look at content creation process',
+            'Modal design for subscription upgrade flow'
           ]
         },
         {
@@ -29,14 +34,19 @@ $(document).ready(function() {
             { url: 'https://tappityapp.com', text: 'Tappity Web App' }
           ],
           media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
+            'https://youtu.be/0LpfQVcK9Ew',
+            'stream-images/portfolio images/tappity-onboarding/tracking.jpg',
+            'stream-images/portfolio images/tappity-onboarding/fb-ad.jpg',
+            'stream-images/portfolio images/tappity-onboarding/free-ebook-landing.jpg'
+          ],
+          captions: [
+            'Onboarding aims to have early small "wow" moments like saying the child\'s name from their chosen character.',
+            'Tracking dropoff in the funnel to make rapid improvements every day.',
+            'Paid acquisition start of the funnel -> custom funnel to reflect marketing copy and offer.',
+            'Marketing landing pages also have customized funnels based off user behavior, product knowledge, and level of motivation.'
           ]
         },
-        {
+       /* {
           id: 'ai-lesson-creation',
           title: 'AI Lesson Creation – Automating Content Workflows',
           shortSummary: 'Designed and built an internal tool that generates complete lessons from a single AI prompt, automating ~90% of content creation tasks.',
@@ -49,62 +59,38 @@ $(document).ready(function() {
             'https://www.youtube.com/watch?v=cyCMt1j5GF0',
             'stream-images/data.png',
             'stream-images/modal.png'
-          ]
-        },
-        {
-          id: 'tappity-personalization',
-          title: 'Tappity – Personalization & Daily Engagement',
-          shortSummary: 'Built a suite of features including a daily science challenge, recommendation engine, and gamification to drive repeat use.',
-          longSummary: 'Parents could choose daily or weekly cadence. Challenges paired with personalized recommendations based on child interests helped increase ongoing engagement, creating habits and stronger retention.',
-          results: 'Increased daily/weekly active usage through personalized challenges',
-          links: [
-            { url: 'https://tappityapp.com', text: 'Tappity Web App' }
           ],
-          media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
+          captions: [
+            'AI content generation interface for lesson creation',
+            'Automated script and quiz generation workflow',
+            'Demo of the complete AI-powered content pipeline',
+            'Performance metrics showing 90% time reduction',
+            'Content quality comparison: AI vs manual creation'
           ]
-        },
-        {
-          id: 'billcom-process',
-          title: 'Bill.com – Custom Design Process for Complex Workflows',
-          shortSummary: 'Created a custom design sprint process to integrate input from engineering, compliance, partnerships, and marketing from day one.',
-          longSummary: 'The process supported both fast-turnaround features (2-hour sprints) and large-scale projects (1+ week). It ensured accessibility and compliance requirements were addressed early, avoiding late blockers and speeding delivery for a complex financial SaaS product.',
-          results: 'Improved design efficiency and cross-functional alignment for 50+ sprints',
-          links: [
-            { url: 'https://bill.com', text: 'Bill.com' }
-          ],
-          media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
-          ]
-        },
+        },*/
         {
           id: 'billcom-redesign',
-          title: 'Bill.com – Redesigning SMB Onboarding & Workflows',
-          shortSummary: 'Led a major redesign of Bill.com for SMB customers, simplifying complex onboarding and workflows.',
+          title: 'Bill.com – Complete Redesign for SMB + Custom Design Sprint Process',
+          shortSummary: 'Led a major redesign of Bill.com for SMB customers, simplifying complex onboarding and workflows. Created a custom design sprint process to integrate input from engineering, compliance, partnerships, and marketing from day one.',
           longSummary: 'Designed hundreds of components and dozens of workflows, tested weekly with real users. The redesign focused on making compliance-heavy processes accessible while improving usability for small business admins and enterprise teams, supporting Bill.com’s growth to IPO.',
           results: 'Supported $100M+ ARR growth and IPO readiness',
           links: [
             { url: 'https://bill.com', text: 'Bill.com' }
           ],
           media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
+            'stream-images/portfolio images/bill-redesign/bill1.jpg',
+            'stream-images/portfolio images/bill-redesign/bill2.jpg',
+            'stream-images/portfolio images/bill-redesign/bill3.jpg',
+          ],
+          captions: [
+            'Before: Complex SMB onboarding with high drop-off rates',
+            'After: Streamlined workflow reducing friction points',
+            'User testing sessions that informed the redesign',
           ]
         },
         {
           id: 'yahoo-fantasy',
-          title: 'Yahoo Fantasy Sports – Designing “Two Apps in One”',
+          title: 'Yahoo Fantasy Sports – Designing "Two Apps in One"',
           shortSummary: 'Designed mobile interactions to integrate two data-heavy fantasy sports products into one seamless app.',
           longSummary: 'Explored and tested playful UI patterns for switching between modes, including coin-flip interactions. The result was a responsive, engaging experience that allowed users to quickly toggle between contexts on iOS and Android.',
           results: 'Improved usability and engagement for millions of mobile sports users',
@@ -112,11 +98,17 @@ $(document).ready(function() {
             { url: 'https://sports.yahoo.com/fantasy/', text: 'Yahoo Fantasy Sports' }
           ],
           media: [
-            'stream-images/lobby.png',
-            'stream-images/chat.png',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
-            'stream-images/data.png',
-            'stream-images/modal.png'
+            'stream-images/portfolio images/yahoo-sports/80.png',
+            'stream-images/portfolio images/yahoo-sports/chat.png',
+            'stream-images/portfolio images/yahoo-sports/data.png',
+            'stream-images/portfolio images/yahoo-sports/lobby.png',
+          ],
+          captions: [
+            'Dual-mode interface design for fantasy sports switching',
+            'Interactive coin-flip animation for mode transitions',
+            'Mobile interaction patterns and gesture controls',
+            'User engagement metrics across iOS and Android',
+            'Responsive design adaptations for different screen sizes'
           ]
         }
       ];
@@ -131,7 +123,8 @@ $(document).ready(function() {
             longSummary: item.longSummary,
             results: item.results,
             links: item.links,
-            images: item.media // Keep 'images' for backward compatibility
+            images: item.media, // Keep 'images' for backward compatibility
+            captions: item.captions || [] // Add captions support
         };
     });
 
@@ -152,13 +145,19 @@ $(document).ready(function() {
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-section">
-                            <div class="portfolio-label">Project Summary</div>
+                            <div class="portfolio-label">
+                                <i class="ti ti-compass-filled"></i>
+                                Project Summary
+                            </div>
                             <div class="portfolio-description">
                                 ${item.shortSummary}
                             </div>
                         </div>
                         <div class="portfolio-section">
-                            <div class="portfolio-label">Results</div>
+                            <div class="portfolio-label">
+                                <i class="ti ti-chart-area-line-filled"></i>
+                                Results
+                            </div>
                             <div class="portfolio-results">
                                 ${item.results}
                             </div>
@@ -215,7 +214,7 @@ $(document).ready(function() {
                 console.log('Failed to extract video ID from:', imagePath);
             }
         } else {
-            $(this).css('background-image', `url(${imagePath})`);
+            $(this).css('background-image', `url("${imagePath}")`);
         }
     });
 
@@ -390,7 +389,7 @@ $(document).ready(function() {
                 // Add play icon overlay
                 thumbnail.append('<div class="play-icon"><i class="ti ti-player-play-filled"></i></div>');
             } else {
-                thumbnail.css('background-image', `url(${imagePath})`);
+                thumbnail.css('background-image', `url("${imagePath}")`);
             }
             
             // Attach click handler directly to the thumbnail
@@ -405,6 +404,8 @@ $(document).ready(function() {
 
         // Show the correct image
         updateCarousel();
+        updateCaption();
+        updateNavigationArrows();
 
         // Show modal with fade in effect
         $('#portfolioModal').fadeIn(300);
@@ -412,6 +413,13 @@ $(document).ready(function() {
     }
 
     function closeModal() {
+        // Stop all videos before closing
+        $('#carouselImages iframe').each(function() {
+            const iframe = $(this)[0];
+            const src = iframe.src;
+            iframe.src = src; // This reloads the iframe and stops the video
+        });
+        
         $('#portfolioModal').fadeOut(300);
         $('body').css('overflow', 'auto');
         currentPortfolio = null;
@@ -435,9 +443,18 @@ $(document).ready(function() {
         const portfolio = portfolioData[currentPortfolio];
         if (index < 0 || index >= portfolio.images.length) return;
         
+        // Stop all videos before changing slides
+        $('#carouselImages iframe').each(function() {
+            const iframe = $(this)[0];
+            const src = iframe.src;
+            iframe.src = src; // This reloads the iframe and stops the video
+        });
+        
         currentImageIndex = index;
         updateCarousel();
         updateThumbnails();
+        updateCaption();
+        updateNavigationArrows();
     }
 
     function updateCarousel() {
@@ -448,6 +465,38 @@ $(document).ready(function() {
     function updateThumbnails() {
         $('.carousel-thumbnail').removeClass('active');
         $(`.carousel-thumbnail[data-index="${currentImageIndex}"]`).addClass('active');
+    }
+
+    function updateCaption() {
+        if (!currentPortfolio) return;
+        
+        const portfolio = portfolioData[currentPortfolio];
+        const caption = portfolio.captions && portfolio.captions[currentImageIndex] 
+            ? portfolio.captions[currentImageIndex] 
+            : '';
+        
+        $('#imageCaption').text(caption);
+    }
+
+    function updateNavigationArrows() {
+        if (!currentPortfolio) return;
+        
+        const portfolio = portfolioData[currentPortfolio];
+        const totalImages = portfolio.images.length;
+        
+        // Hide/show left arrow
+        if (currentImageIndex <= 0) {
+            $('#carouselPrev').hide();
+        } else {
+            $('#carouselPrev').show();
+        }
+        
+        // Hide/show right arrow
+        if (currentImageIndex >= totalImages - 1) {
+            $('#carouselNext').hide();
+        } else {
+            $('#carouselNext').show();
+        }
     }
 
     // Handle window resize
