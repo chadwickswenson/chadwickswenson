@@ -14,14 +14,23 @@ $(document).ready(function() {
           media: [
             'stream-images/portfolio images/tappity-app/card1.png',
             'https://www.youtube.com/watch?v=cyCMt1j5GF0',
+            'https://youtu.be/6wwfFbxwC_k',
+            'https://youtu.be/fLVC2XDkq_s',
+            'https://youtu.be/LQ_4padvqVw',
+            'https://youtu.be/xvC1woVQJpc',
+            'https://youtu.be/vVNBnOaWNxg',
             'https://youtu.be/98Bp0ze88_k',
-            'https://youtu.be/vVNBnOaWNxg'
+
           ],
           captions: [
-            'Main lobby interface showing personalized learning paths',
-            'Demo video showing the complete user experience',
-            'Behind-the-scenes look at content creation process',
-            'Modal design for subscription upgrade flow'
+            'Tappity is the #1 science app for kids.',
+            'This project connected the UI with every part of the product experience. Because we produce our own interactive content in a film studio, we design filming, editing, and interactivity to align seamlessly with the app. From the device interface to lesson filming, series progress, and interactive elements, everything works together to create a truly interactive experience.',
+            'The home page offers users a daily challenge, personalized lesson recommendations, and a library of lessons to explore.',
+            'Every page is responsive and designed for the phone, tablet, and desktop.',
+            'The AI-powered science curriculum is designed to be fun and engaging for kids, and easy for parents to use.',
+            'We improved trial to paid conversion by 23% by offering interactive ebook versions of our physical books. This allowed users to get immediate value while waiting for the physical books to arrive.',
+            'A creative UI allows kids to create.',
+            'As part of this project I learned print design and published over 10 science books.',
           ]
         },
         {
@@ -35,15 +44,17 @@ $(document).ready(function() {
           ],
           media: [
             'https://youtu.be/0LpfQVcK9Ew',
+            'https://youtu.be/CYm2ken-UPY',
             'stream-images/portfolio images/tappity-onboarding/tracking.jpg',
             'stream-images/portfolio images/tappity-onboarding/fb-ad.jpg',
             'stream-images/portfolio images/tappity-onboarding/free-ebook-landing.jpg'
           ],
           captions: [
             'Onboarding aims to have early small "wow" moments like saying the child\'s name from their chosen character.',
+            'We tripled the number of books purchased by adding two onboarding steps after checkout. These steps educated customers about what they already had (ebooks) and what was available (print books and member discounts).',
             'Tracking dropoff in the funnel to make rapid improvements every day.',
             'Paid acquisition start of the funnel -> custom funnel to reflect marketing copy and offer.',
-            'Marketing landing pages also have customized funnels based off user behavior, product knowledge, and level of motivation.'
+            'Marketing landing pages have customized funnels based off user behavior, product knowledge, and level of motivation.'
           ]
         },
        /* {
@@ -70,7 +81,7 @@ $(document).ready(function() {
         },*/
         {
           id: 'billcom-redesign',
-          title: 'Bill.com – Complete Redesign & Custom Design Sprint Process',
+          title: 'Bill.com – Complete Redesign, Onboarding, and Activation',
           shortSummary: 'Led the full redesign of Bill.com, simplifying onboarding, bill pay, and admin workflows. Built a custom design sprint process to integrate engineering, compliance, accessibility, partnerships, and marketing from the start.',
           longSummary: 'Partnered with PM, two engineering teams (15+ engineers), and ~5 designers. Designed hundreds of components and workflows, testing weekly with users. Championed the redesign vision across 500+ employees and created a repeatable sprint methodology (50+ sprints) that balanced speed with gathering requirements from dozens of stakeholders.',
           results: 'Launched redesigned Bill.com within 6 months. Completed 30+ ADA-compliant flows. Improved SMB adoption and set the foundation for SMB growth to IPO.',
@@ -83,15 +94,15 @@ $(document).ready(function() {
             'stream-images/portfolio images/bill-redesign/bill3.jpg',
           ],
           captions: [
-            'Before: Complex SMB onboarding with high drop-off rates',
-            'After: Streamlined workflow reducing friction points',
-            'User testing sessions that informed the redesign',
+            'Modernized Bill.com’s design with role-based onboarding to boost activation.',
+            'Aligned 500+ employees around the redesign vision through clear communication and company-wide engagement.',
+            'Built a custom sprint process to gather requirements from diverse stakeholders across product, engineering, compliance, ADA, marketing, and partnerships.',
           ]
         },
         {
           id: 'yahoo-fantasy',
-          title: 'Yahoo Fantasy Sports – Designing "Two Apps in One"',
-          shortSummary: 'Designed the integration of Daily Fantasy into Yahoo Fantasy Sports, helping 5M+ monthly active users discover and adopt a brand-new feature.',
+          title: 'Yahoo Fantasy Sports – Introducing Daily Fantasy to Millions of Users',
+          shortSummary: 'Designed the integration of Daily Fantasy into Yahoo Fantasy Sports, helping 5M+ monthly active users discover and try a brand-new feature.',
           longSummary: 'Collaborated with PM, design leadership, and a 15-person iOS/Android engineering team. After testing different approaches, we landed on a playful “coin flip” interaction that let users toggle seamlessly between traditional fantasy and daily fantasy, with room for notifications and promotions. ',
           results: '80% of users discovered the new feature, with 60% engaging via the new navigation.',
           links: [
@@ -104,11 +115,10 @@ $(document).ready(function() {
             'stream-images/portfolio images/yahoo-sports/chat.png',
           ],
           captions: [
-            'Dual-mode interface design for fantasy sports switching',
-            'Interactive coin-flip animation for mode transitions',
-            'Mobile interaction patterns and gesture controls',
-            'User engagement metrics across iOS and Android',
-            'Responsive design adaptations for different screen sizes'
+            'Introduced a “coin flip” navigation that let users seamlessly toggle between traditional and daily fantasy.',
+            'Within Daily Fantasy, I designed a modular element where we could test different offers and promotions to drive user activation.',
+            'Redesigned the draft lobby for clarity and ease of use.',
+            'Designed and launched a new in-app chat feature for fantasy players.',
           ]
         }
       ];
@@ -164,7 +174,7 @@ $(document).ready(function() {
                         </div>
                     </div>
                     <div class="portfolio-thumbnails">
-                        ${item.media.slice(0, 4).map(mediaUrl => 
+                        ${item.media.map(mediaUrl => 
                             `<div class="thumbnail" data-image="${mediaUrl}"></div>`
                         ).join('')}
                     </div>
