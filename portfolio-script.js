@@ -3,7 +3,7 @@ $(document).ready(function() {
     const portfolioItems = [
         {
           id: 'tappity-app',
-          title: 'Tappity – Designing the #1 Science App for Kids from Scratch',
+          title: 'Tappity – Designing the #1 Science App for Kids',
           shortSummary: 'Designed Tappity from the ground up; brand identity, design system, user flows, marketing, and book design. It grew into the #1 kids’ science app, offering thousands of interactive lessons and curriculum-paired books.',
           longSummary: 'I invested thousands of hours designing everything from product UX to eight published science books. The result is a cohesive experience for families: casual science exploration for kids, dashboards and controls for parents, curriculum depth for homeschoolers, and AI implemented throughout.',
           results: '$5M+ in revenue, 1M+ users, 40M+ lessons completed, and an incredible team making it all possible.',
@@ -57,6 +57,30 @@ $(document).ready(function() {
             'Marketing landing pages have customized funnels based off user behavior, product knowledge, and level of motivation.'
           ]
         },
+        {
+            id: 'ai-prototype',
+            title: 'AI Lesson Creator Prototype – Designed, Built, & Launched in Two Weeks',
+            shortSummary: 'I created both the AI agent and the app’s UI/UX, enabling users to generate interactive lessons instantly from a simple prompt. Each lesson included image and video backgrounds, audio, an animated character, subtitles, and interactive elements all controlled by AI. The result is an app where a kid can ask any question and receive a personalized interactive lesson in seconds.',
+            longSummary: 'I built this as a quick prototype and released it publicly on the App Store to gather customer feedback. My goal was to fully understand the capabilities of AI and how it could impact our product, as well as see how customers would react. The app used Gemini, ChatGPT, Anthropic, and ElevenLabs APIs to power unique capabilities like script generation, visuals, narration, and interactivity. I also created a simple brand called Snap Science to launch the prototype. Thousands of users asked questions, used the app to learn, and completed surveys, giving me valuable insights into the potential of AI-driven lesson creation.',
+            results: 'The prototype reached thousands of users who tested lessons and shared feedback. Learnings from this project directly informed our new AI course and lesson creation tools, enabling the team to build courses 100x faster with richer interaction and higher quality.',
+            links: [
+              { url: 'https://apps.apple.com/us/app/snap-science-learn-anything/id6739454340', text: 'Try the iOS App Prototype' }
+            ],
+            media: [
+              'stream-images/portfolio images/snap-science/ipad-slide1.jpg',
+              'stream-images/portfolio images/snap-science/ipad-slide2.jpg',
+              'stream-images/portfolio images/snap-science/ipad-slide3.jpg',
+              'stream-images/portfolio images/snap-science/ipad-slide4.jpg',
+              'stream-images/portfolio images/snap-science/ipad-slide5.jpg',
+            ],
+            captions: [
+              'Ask a question on any topic.',
+            'Designed to be simple and kid-friendly.',
+            'My AI agent creates an interactive lesson based on your question.',
+            'You can also learn by snapping a picture of something around you.',
+            'I gave the AI lesson agent access to our image and video library so it can select the best visuals for each lesson.',
+            ]
+          },
        /* {
           id: 'ai-lesson-creation',
           title: 'AI Lesson Creation – Automating Content Workflows',
