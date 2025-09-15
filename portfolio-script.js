@@ -6,13 +6,14 @@ $(document).ready(function() {
           title: 'Tappity – Designing the #1 Science App for Kids',
           shortSummary: 'Designed Tappity from the ground up; brand identity, design system, user flows, marketing, and book design. It grew into the #1 kids’ science app, offering thousands of interactive lessons and curriculum-paired books.',
           longSummary: 'I invested thousands of hours designing everything from product UX to eight published science books. The result is a cohesive experience for families: casual science exploration for kids, dashboards and controls for parents, curriculum depth for homeschoolers, and AI implemented throughout.',
-          results: '$5M+ in revenue, 1M+ users, 40M+ lessons completed, and an incredible team making it all possible.',
+          results: '$5M+ in revenue, 1M+ users, 40M+ lessons completed, and an incredible team making it all possible. Recognized by Apple for design quality and craft, with 30+ App Store features.',
           links: [
             { url: 'https://tappityapp.com', text: 'Tappity Web App' },
             { url: 'https://apps.apple.com/us/app/science-for-kids-by-tappity/id1265019371', text: 'iOS App Store App Page' }
           ],
           media: [
             'stream-images/portfolio images/tappity-app/card1.png',
+            'stream-images/portfolio images/tappity-app/apple-feature.jpg',
             'https://www.youtube.com/watch?v=cyCMt1j5GF0',
             'https://youtu.be/6wwfFbxwC_k',
             'https://youtu.be/fLVC2XDkq_s',
@@ -24,6 +25,7 @@ $(document).ready(function() {
           ],
           captions: [
             'Tappity is the #1 science app for kids.',
+            'Tappity has been recognized by Apple for design quality and craft, with 30+ App Store features.',
             'This project connected the UI with every part of the product experience. Because we produce our own interactive content in a film studio, we design filming, editing, and interactivity to align seamlessly with the app. From the device interface to lesson filming, series progress, and interactive elements, everything works together to create a truly interactive experience.',
             'The home page offers users a daily challenge, personalized lesson recommendations, and a library of lessons to explore.',
             'Every page is responsive and designed for the phone, tablet, and desktop.',
