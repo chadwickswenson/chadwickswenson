@@ -15,15 +15,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
+    <script>
+        // Redirect to portfolio.html by default
+        window.location.href = 'portfolio.html';
+    </script>
     <!-- Navigation Tabs -->
     <div class="nav-tabs">
+        <!-- Resume link commented out as requested
         <a href="index.html" class="nav-tab active">
             <i class="ti ti-user-filled"></i>
             Resume
         </a>
-        <a href="portfolio.html" class="nav-tab">
+        -->
+        <a href="portfolio.html" class="nav-tab active">
             <i class="ti ti-briefcase-filled"></i>
-            Portfolio
+            Product Portfolio
+        </a>
+        <a href="#contact" class="nav-tab" onclick="showContact()">
+            <i class="ti ti-mail-filled"></i>
+            Contact
         </a>
     </div>
 

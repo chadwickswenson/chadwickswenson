@@ -20,13 +20,13 @@
 <body>
     <!-- Navigation Tabs -->
     <div class="nav-tabs">
-        <a href="index.html" class="nav-tab">
-            <i class="ti ti-user-filled"></i>
-            Resume
-        </a>
-        <a href="portfolio.html" class="nav-tab active">
+        <a href="portfolio.html" class="nav-tab active" id="portfolioTab">
             <i class="ti ti-briefcase-filled"></i>
-            Portfolio
+            Product Portfolio
+        </a>
+        <a href="#contact" class="nav-tab" id="contactTab" onclick="showContact()">
+            <i class="ti ti-mail-filled"></i>
+            Contact
         </a>
     </div>
 
@@ -36,11 +36,47 @@
             <div class="title">A selection of my work. Click any project for more details.</div>
         </header>
 
-        <main class="content">
+        <main class="content" id="portfolioContent">
             <section class="section">
                 <div class="portfolio-items">
                     <!-- Portfolio items will be generated dynamically from JavaScript -->
                 </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="resume" id="contactContent" style="display: none;">
+        <header class="header">
+            <h1 class="name">Contact</h1>
+            <p>I'm always interested in discussing new opportunities, collaborations, or just connecting with fellow designers and entrepreneurs. Whether you're looking for product design expertise, want to chat about building scalable products, or have questions about my experience founding and scaling Tappity, I'd love to hear from you.</p>
+        </header>
+
+        <main class="content">
+            <section class="section">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="ti ti-map-pin"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ti ti-phone"></i>
+                        <a href="tel:510-384-8049">510-384-8049</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ti ti-mail"></i>
+                        <a href="mailto:chadswenson@gmail.com">chadswenson@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ti ti-world"></i>
+                        <a href="https://chadwickswenson.com" target="_blank">chadwickswenson.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ti ti-brand-linkedin"></i>
+                        <a href="https://linkedin.com/in/chadwickswenson" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                
             </section>
         </main>
     </div>
@@ -116,5 +152,39 @@
     </div>
 
     <script src="portfolio-script.js?v=4"></script>
+    
+    <script>
+        function showContact() {
+            // Hide portfolio content and show contact content
+            document.getElementById('portfolioContent').parentElement.style.display = 'none';
+            document.getElementById('contactContent').style.display = 'block';
+            
+            // Update tab active states
+            document.getElementById('portfolioTab').classList.remove('active');
+            document.getElementById('contactTab').classList.add('active');
+            
+            // Hide portfolio modal if it's open
+            const modal = document.getElementById('portfolioModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        function showPortfolio() {
+            // Show portfolio content and hide contact content
+            document.getElementById('portfolioContent').parentElement.style.display = 'block';
+            document.getElementById('contactContent').style.display = 'none';
+            
+            // Update tab active states
+            document.getElementById('portfolioTab').classList.add('active');
+            document.getElementById('contactTab').classList.remove('active');
+        }
+        
+        // Add click handler to portfolio tab
+        document.getElementById('portfolioTab').addEventListener('click', function(e) {
+            e.preventDefault();
+            showPortfolio();
+        });
+    </script>
 </body>
 </html>
