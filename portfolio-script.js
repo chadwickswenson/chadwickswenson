@@ -3,8 +3,9 @@ $(document).ready(function() {
     const portfolioItems = [
         {
           id: 'tappity-app',
-          title: 'Tappity – Designing the #1 Science App for Kids',
-          shortSummary: 'Designed Tappity from the ground up; brand identity, design system, user flows, marketing, and book design. It grew into the #1 kids’ science app, offering thousands of interactive lessons and curriculum-paired books.',
+          title: 'Creating The #1 Science App for Kids',
+          introSentence: "Learn how I grew this app from 0 to over 1M+ users.",
+          shortSummary: 'Designed Tappity from the ground up; brand identity, design system, user flows, marketing, and book design. It grew into the #1 kids\' science app, offering thousands of interactive lessons and curriculum-paired books.',
           longSummary: 'I invested thousands of hours designing everything from product UX to eight published science books. The result is a cohesive experience for families: casual science exploration for kids, dashboards and controls for parents, curriculum depth for homeschoolers, and AI implemented throughout.',
           results: '$5M+ in revenue, 1M+ users, 40M+ lessons completed, and an incredible team making it all possible. Recognized by Apple for design quality and craft, with 30+ App Store features.',
           links: [
@@ -12,9 +13,10 @@ $(document).ready(function() {
             { url: 'https://apps.apple.com/us/app/science-for-kids-by-tappity/id1265019371', text: 'iOS App Store App Page' }
           ],
           media: [
+            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
             'stream-images/portfolio images/tappity-app/card1.png',
             'stream-images/portfolio images/tappity-app/apple-feature.jpg',
-            'https://www.youtube.com/watch?v=cyCMt1j5GF0',
+            
             'https://youtu.be/6wwfFbxwC_k',
             'https://youtu.be/fLVC2XDkq_s',
             'https://youtu.be/LQ_4padvqVw',
@@ -24,9 +26,10 @@ $(document).ready(function() {
 
           ],
           captions: [
+            'This project connected the UI with every part of the product experience. Because we produce our own interactive content in a film studio, we design filming, editing, and interactivity to align seamlessly with the app. From the device interface to lesson filming, series progress, and interactive elements, everything works together to create a truly interactive experience.',
             'Tappity is the #1 science app for kids.',
             'Tappity has been recognized by Apple for design quality and craft, with 30+ App Store features.',
-            'This project connected the UI with every part of the product experience. Because we produce our own interactive content in a film studio, we design filming, editing, and interactivity to align seamlessly with the app. From the device interface to lesson filming, series progress, and interactive elements, everything works together to create a truly interactive experience.',
+            
             'The home page offers users a daily challenge, personalized lesson recommendations, and a library of lessons to explore.',
             'Every page is responsive and designed for the phone, tablet, and desktop.',
             'The AI-powered science curriculum is designed to be fun and engaging for kids, and easy for parents to use.',
@@ -38,7 +41,8 @@ $(document).ready(function() {
         {
           id: 'tappity-onboarding',
           title: 'Tappity – Onboarding that Converts',
-          shortSummary: 'Over 5 years, I iterated on onboarding across iOS, mobile web, and desktop. The focus was on getting users to early “wow” moments and tailoring flows by source (paid marketing, referrals, organic search) and family type (homeschool vs. non-homeschool) to maximize conversion to subscription.',
+          introSentence: "Redesigned onboarding flows that increased mobile conversion from 2.5% to 5%+.",
+          shortSummary: 'Over 5 years, I iterated on onboarding across iOS, mobile web, and desktop. The focus was on getting users to early "wow" moments and tailoring flows by source (paid marketing, referrals, organic search) and family type (homeschool vs. non-homeschool) to maximize conversion to subscription.',
           longSummary: 'We funneled hundreds of users a day through tests to refine every step. Highlights included “early wow” personalization (characters greeting kids by name from a library of 500+ names, later scaled with AI) and source-specific flows. For example, motivated organic search users could complete more setup, while paid users needed a lighter path with immediate value. Homeschool families, on the other hand, tended to prefer more setup and more context before getting started. They valued understanding the product upfront and often made larger purchases sooner, so we customized their flow to match that behavior.',
           results: 'Raised onboarding completion from 60% → 95%. Increased mobile download-to-paid conversion from 2.5% → 5%+, which is above the typical 1–4% range for consumer education apps, despite our product being priced at a premium ($10+/month).',
           links: [
@@ -62,7 +66,8 @@ $(document).ready(function() {
         {
             id: 'ai-prototype',
             title: 'AI Lesson Creator Prototype – Designed, Built, & Launched in Two Weeks',
-            shortSummary: 'I created both the AI agent and the app’s UI/UX, enabling users to generate interactive lessons instantly from a simple prompt. Each lesson included image and video backgrounds, audio, an animated character, subtitles, and interactive elements all controlled by AI. The result is an app where a kid can ask any question and receive a personalized interactive lesson in seconds.',
+            introSentence: "Built and shipped an AI-powered lesson creator from idea to App Store in 14 days.",
+            shortSummary: 'I created both the AI agent and the app\'s UI/UX, enabling users to generate interactive lessons instantly from a simple prompt. Each lesson included image and video backgrounds, audio, an animated character, subtitles, and interactive elements all controlled by AI. The result is an app where a kid can ask any question and receive a personalized interactive lesson in seconds.',
             longSummary: 'I built this as a quick prototype and released it publicly on the App Store to gather customer feedback. My goal was to fully understand the capabilities of AI and how it could impact our product, as well as see how customers would react. The app used Gemini, ChatGPT, Anthropic, and ElevenLabs APIs to power unique capabilities like script generation, visuals, narration, and interactivity. Thousands of users asked questions, used the app to learn, and completed surveys, giving me valuable insights into the potential of AI-driven lesson creation.',
             results: 'The prototype reached thousands of users who tested lessons and shared feedback. Learnings from this project directly informed our new AI course and lesson creation tools, enabling the team to build courses 100x faster with richer interaction and higher quality.',
             links: [
@@ -108,6 +113,7 @@ $(document).ready(function() {
         {
           id: 'billcom-redesign',
           title: 'Bill.com – Complete Redesign, Onboarding, and Activation',
+          introSentence: "Led Bill.com's complete redesign with 15+ engineers, launching in 6 months to IPO.",
           shortSummary: 'Led the full redesign of Bill.com, simplifying onboarding, bill pay, and admin workflows. Built a custom design sprint process to integrate engineering, compliance, accessibility, partnerships, and marketing from the start.',
           longSummary: 'Partnered with PM, two engineering teams (15+ engineers), and ~5 designers. Designed hundreds of components and workflows, testing weekly with users. Championed the redesign vision across 500+ employees and created a repeatable sprint methodology (50+ sprints) that balanced speed with gathering requirements from dozens of stakeholders.',
           results: 'Launched redesigned Bill.com within 6 months. Completed 30+ ADA-compliant flows. Improved SMB adoption and set the foundation for SMB growth to IPO.',
@@ -128,6 +134,7 @@ $(document).ready(function() {
         {
           id: 'yahoo-fantasy',
           title: 'Yahoo Fantasy Sports – Introducing Daily Fantasy to Millions of Users',
+          introSentence: "Designed Daily Fantasy integration for 5M+ users with 80% feature discovery rate.",
           shortSummary: 'Designed the integration of Daily Fantasy into Yahoo Fantasy Sports, helping 5M+ monthly active users discover and try a brand-new feature.',
           longSummary: 'Collaborated with PM, design leadership, and a 15-person iOS/Android engineering team. After testing different approaches, we landed on a playful “coin flip” interaction that let users toggle seamlessly between traditional fantasy and daily fantasy, with room for notifications and promotions. ',
           results: '80% of users discovered the new feature, with 60% engaging via the new navigation.',
@@ -155,6 +162,7 @@ $(document).ready(function() {
     portfolioItems.forEach(item => {
         portfolioData[item.id] = {
             title: item.title,
+            introSentence: item.introSentence,
             shortSummary: item.shortSummary,
             longSummary: item.longSummary,
             results: item.results,
@@ -173,36 +181,18 @@ $(document).ready(function() {
         portfolioContainer.empty();
 
         portfolioItems.forEach(item => {
+            const firstMedia = item.media[0]; // Get the first image/video
             const portfolioCard = $(`
                 <div class="portfolio-card" data-portfolio="${item.id}">
                     <div class="portfolio-card-header">
                         <h3 class="portfolio-title">${item.title}</h3>
                         <i class="ti ti-circle-arrow-right-filled portfolio-arrow"></i>
                     </div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-section">
-                            <div class="portfolio-label">
-                                <i class="ti ti-compass-filled"></i>
-                                Project Summary
-                            </div>
-                            <div class="portfolio-description">
-                                ${item.shortSummary}
-                            </div>
-                        </div>
-                        <div class="portfolio-section">
-                            <div class="portfolio-label">
-                                <i class="ti ti-chart-area-line-filled"></i>
-                                Results
-                            </div>
-                            <div class="portfolio-results">
-                                ${item.results}
-                            </div>
-                        </div>
+                    <div class="portfolio-intro">
+                        ${item.introSentence}
                     </div>
-                    <div class="portfolio-thumbnails">
-                        ${item.media.map(mediaUrl => 
-                            `<div class="thumbnail" data-image="${mediaUrl}"></div>`
-                        ).join('')}
+                    <div class="portfolio-hero-image">
+                        <div class="hero-thumbnail" data-image="${firstMedia}"></div>
                     </div>
                 </div>
             `);
@@ -228,11 +218,63 @@ $(document).ready(function() {
         return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
     }
 
+    // Function to play video inline
+    function playVideoInline($thumbnail, videoUrl) {
+        // Check if video is already playing
+        if ($thumbnail.find('iframe').length > 0) {
+            return; // Video already playing
+        }
+
+        const videoId = getYouTubeVideoId(videoUrl);
+        if (!videoId) return;
+
+        // Create iframe with autoplay
+        const iframe = $('<iframe>')
+            .addClass('inline-video-player')
+            .attr('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`)
+            .attr('frameborder', '0')
+            .attr('allowfullscreen', true)
+            .attr('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+
+        // Hide the background image and play overlay
+        $thumbnail.css('background-image', 'none');
+        $thumbnail.find('.video-play-overlay').hide();
+
+        // Add the iframe
+        $thumbnail.append(iframe);
+
+        // Add a close button to stop video
+        const closeBtn = $('<button>')
+            .addClass('inline-video-close')
+            .html('<i class="ti ti-x"></i>')
+            .on('click', function(e) {
+                e.stopPropagation();
+                stopInlineVideo($thumbnail, videoUrl);
+            });
+        
+        $thumbnail.append(closeBtn);
+    }
+
+    // Function to stop inline video
+    function stopInlineVideo($thumbnail, videoUrl) {
+        // Remove iframe and close button
+        $thumbnail.find('iframe').remove();
+        $thumbnail.find('.inline-video-close').remove();
+
+        // Restore the thumbnail background
+        const videoId = getYouTubeVideoId(videoUrl);
+        if (videoId) {
+            const thumbnailUrl = getYouTubeThumbnail(videoId);
+            $thumbnail.css('background-image', `url(${thumbnailUrl})`);
+            $thumbnail.find('.video-play-overlay').show();
+        }
+    }
+
     // Generate portfolio HTML from data
     generatePortfolioHTML();
 
-    // Set background images for thumbnails
-    $('.thumbnail').each(function() {
+    // Set background images for thumbnails and hero images
+    $('.thumbnail, .hero-thumbnail').each(function() {
         const imagePath = $(this).data('image');
         if (isYouTubeUrl(imagePath)) {
             const videoId = getYouTubeVideoId(imagePath);
@@ -254,17 +296,26 @@ $(document).ready(function() {
         }
     });
 
-    // Handle thumbnail clicks (with event stopping to prevent card click)
-    $('.thumbnail').on('click', function(e) {
+    // Handle thumbnail and hero image clicks (with event stopping to prevent card click)
+    $('.thumbnail, .hero-thumbnail').on('click', function(e) {
         e.stopPropagation(); // Prevent card click handler from firing
         
+        const $thumbnail = $(this);
         const portfolioId = $(this).closest('.portfolio-card').data('portfolio');
         const imagePath = $(this).data('image');
         const portfolio = portfolioData[portfolioId];
         
         if (portfolio) {
             const imageIndex = portfolio.images.indexOf(imagePath);
-            openModal(portfolioId, imageIndex >= 0 ? imageIndex : 0);
+            
+            // Check if this is the hero thumbnail (first item) and it's a video
+            if ($thumbnail.hasClass('hero-thumbnail') && imageIndex === 0 && isYouTubeUrl(imagePath)) {
+                // Play video inline instead of opening modal
+                playVideoInline($thumbnail, imagePath);
+            } else {
+                // Open modal for all other cases
+                openModal(portfolioId, imageIndex >= 0 ? imageIndex : 0);
+            }
         }
     });
 
